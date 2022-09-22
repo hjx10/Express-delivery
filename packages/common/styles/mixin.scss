@@ -1,0 +1,39 @@
+@use "./var.scss";
+
+@mixin response-font($isResponse:false) {
+  @if $isResponse {
+    font-size: 10vw; // 跟随屏幕做自动适应，平分十份
+  } @else {
+    font-size: #{var.$design-size}px;
+  }
+}
+
+// 字体超出显示...
+@mixin text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 描述性文字字体
+@mixin text-desc() {
+  color: rgb(69 90 100 / 60%);
+  font-size: 14px;
+}
+
+@mixin container-bg-white() {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+// 清除浮动
+@mixin clearfix() {
+  &::after {
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    content: "";
+  }
+}

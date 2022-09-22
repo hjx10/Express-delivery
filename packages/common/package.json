@@ -1,0 +1,25 @@
+{
+  "name": "@rabbit-run/common",
+  "version": "1.0.0",
+  "private": true,
+  "description": "小兔快跑公用模块",
+  "main": "src/main.ts",
+  "author": "SystemLighht",
+  "license": "MIT",
+  "homepage": "https://gitee.com/SystemLight/rabbit-run#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/SystemLight/rabbit-run"
+  },
+  "bugs": {
+    "url": "https://gitee.com/SystemLight/rabbit-run/issues"
+  },
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "packageManager": "pnpm@7.9.0",
+  "devDependencies": {
+    "@babel/runtime-corejs3": "^7.18.3",
+    "core-js": "^3.23.1"
+  }
+}

@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@use "./var.scss";
+
+@function rpx($size) {
+  @return #{math.div($size,var.$design-size)}rem;
+}

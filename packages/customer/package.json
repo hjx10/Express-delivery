@@ -1,0 +1,50 @@
+{
+  "name": "@rabbit-run/customer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:webpack": "webpack --mode production",
+    "build:webpack-dev": "webpack --mode development",
+    "dev:webpack-serve": "webpack serve --mode development",
+    "dev:webpack-analyze": "webpack --mode production --analyze",
+    "dev": "npm run dev:webpack-serve",
+    "build": "npm run build:webpack"
+  },
+  "description": "小兔快跑客服单页模块",
+  "author": "SystemLighht",
+  "license": "MIT",
+  "homepage": "https://gitee.com/SystemLight/rabbit-run#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/SystemLight/rabbit-run"
+  },
+  "bugs": {
+    "url": "https://gitee.com/SystemLight/rabbit-run/issues"
+  },
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "packageManager": "pnpm@7.9.0",
+  "devDependencies": {
+    "@systemlight/webpack-config": "^6.0.2",
+    "css-loader": "^6.7.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.7.1",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.1.6",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.3",
+    "vue-loader": "^17.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "@rabbit-run/common": "workspace:^1.0.0",
+    "easemob-websdk": "^4.0.9",
+    "vue": "^3.2.37"
+  }
+}

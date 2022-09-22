@@ -1,0 +1,6 @@
+export {default as authRouter} from './oauth'
+export {default as userRouter} from './user'
+export {default as addressRouter} from './address'
+export {default as easemobRouter} from './easemob'
+export {default as ordersRouter} from './orders'
+export {default as couponRouter} from './coupon'

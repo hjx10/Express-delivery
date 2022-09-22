@@ -1,0 +1,10 @@
+@mixin content() {
+  .img-box {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "sass:math";
+
+@use "./var.scss";
+@use "./mixin.scss";
+@use "./func.scss";
+@use "./utils.scss";
+@use "./media.scss";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimHei, -apple-system, BlinkMacSystemFont, "WenQuanYi Micro Hei", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1;
+}
+
+html {
+  @include mixin.response-font(true);
+
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var.$bg-body;
+  font-size: func.rpx(16);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  appearance: none;
+}
+
+.clearfix {
+  @include mixin.clearfix;
+}
+
+@include utils.content;
+@include media.content;
